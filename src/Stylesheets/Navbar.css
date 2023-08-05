@@ -1,0 +1,100 @@
+.navbar {
+    position: fixed;
+    flex-wrap: wrap;
+    width: 380px;
+    min-height: 100%;
+    overflow-y: hidden;
+    background-color: white;
+    transition: width 200ms ease-in;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20;
+}
+
+.navbar > .nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > .nav-header > .btn-close-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.navbar > .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 42, 53);
+    opacity: 0.80;
+}
+
+.navbar > .nav-item {
+    cursor: pointer;
+    width: 250px;
+    min-height: 45px;
+    margin: 13px 0;
+    border: 2px solid gray;
+    z-index: 3;
+    color: gray;
+    font-weight: 100;
+    font-size: 20px;
+    transition: color 200ms ease-in, border-color 200ms linear, background-color 200ms linear, opacity 200ms ease-in;
+}
+
+.navbar > .nav-item:hover {
+    /* opacity: 0.50; */
+    color: rgb(0, 176, 240);
+    border-color: rgb(0, 176, 240);
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.navbar > .nav-item:active {
+    opacity: 0.3;
+}
+
+.navbar > .active {
+    border-color: rgb(0, 176, 240);
+    background-color: rgb(0, 176, 240);
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 90%;
+        max-width: 380px;
+        height: 90vh;
+        overflow: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 0 10vh 10%;
+    }
+
+    .navbar > .nav-item,
+    .navbar > .nav-header {
+        margin-left: 20px;
+    }
+
+    .navbar > .nav-header > .btn-close-mobile {
+        display: flex;
+    }
+
+    .navbar > .nav-header > .btn-close-mobile > .icn {
+        font-size: 25px;
+        color: rgb(0, 176, 240);
+        transition: opacity 300ms;
+    }
+
+    .navbar > .nav-header > .btn-close-mobile > .icn:active {
+        opacity: 0.50;
+    }
+}

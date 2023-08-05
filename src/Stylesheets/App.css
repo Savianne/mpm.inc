@@ -1,0 +1,192 @@
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.middle-container {
+    position: relative;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+    min-height: 100%;
+    /* flex: 1; */
+    position: absolute;
+    left: 380px;
+    right: 0;
+    transition: left 200ms ease-in;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.content > .about-content-section > footer {
+    height: 80px;
+    width: 100%;
+    color: rgb(216, 212, 212);
+    background-color: rgb(29, 23, 23);
+}
+
+.about-content-section {
+    position: absolute;
+    top: 600px;
+}
+
+.center-content {
+    max-width: 1000px;
+    overflow-x: hidden;
+}
+
+.about-content-section > .section-item {
+    /* background-color: rgba(247, 247, 247, 0.315); */
+    /* padding: 10px 50px; */
+    /* max-width: 1000px; */
+    flex-shrink: 1;
+    transition: opacity 400ms ease-in;
+    /* padding: 0 20px; */
+}
+
+
+/* .about-content-section > .section-item > .bg {
+    width: 100;
+} */
+
+.about-content-section > .section-item > .title {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 1000ms ease-in, height 600ms linear, margin-right 1300ms, margin-left 1300ms, width 1300ms;
+}
+
+.about-content-section > .section-item > .title > .cover-effect {
+    position: absolute;
+    background-color: rgba(173, 173, 173, 0.644);
+    /* filter: blur(5px); */
+    height: 100%;
+    /* transition: left 800ms ease-in-out 1100ms; */
+    transition: opacity 1500ms linear 1100ms;
+}
+
+.about-content-section > .section-item > .title > h1 {
+    position: sticky;
+    top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 0.6em;
+    padding: 20px;
+    background-color: rgb(71, 70, 70);
+    font-weight: 100;
+    z-index: 5;
+    transition: font-size 1800ms;
+}
+
+.about-content-section > .section-item > .txt-content {
+    width: 90%;
+    padding: 50px 5%;
+}
+
+.about-content-section > .section-item > .txt-content > p,
+.about-content-section > .section-item > .txt-content > div > p {
+    font-size: 1.1rem;
+    text-align: justify;
+    /* padding: 0 15px; */
+    line-height: 1.5;
+    border-radius: 8px;
+    /* border-left: 8px solid rgb(226, 224, 224); */
+    /* background-color: rgb(255, 255, 255); */
+    opacity: 0.80;
+}
+
+.about-content-section > .section-item > .txt-content > div > i {
+    transition: opacity 1000ms ease-in-out;
+}
+
+.about-content-section > .section-item > .txt-content > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(46, 44, 44);
+    font-weight: 600;
+}
+
+.about-content-section > .section-item > .bible-verse {
+    width: 90%;
+    padding: 50px 5%;
+}
+
+.about-content-section > .section-item > .bible-verse > .verse-text {
+    color: white;
+    font-family: IndieFlowerRegular;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.about-content-section > .section-item > .bible-verse > .verse {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(52, 66, 75);
+    margin-left: 15px;
+}
+
+.about-content-section > .section-item[target=commitment] > .txt-content {
+    background-color: rgba(202, 202, 202, 0.404);
+}
+
+.founders-box {
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+}
+
+.founders-box > h1 {
+    width: 90%;
+    padding: 10px 5% 40px 5%;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: rgb(129, 126, 126);
+}
+
+.founders-box > .founder-info-box {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(231, 231, 231, 0.342);
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+}
+
+.founders-box > .founder-info-box > .avatar {
+    position: relative;
+    border-radius: 50%;
+}
+
+.founders-box > .founder-info-box > .avatar > img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.founders-box > .founder-info-box > .founder {
+    width: 100%;
+    text-align: center;
+    height:fit-content;
+    color: rgb(87, 85, 85);
+    margin: 15px 0 10px 0;
+    font-size: 1.2em;
+}
+
+.founders-box > .founder-info-box > .role {
+    color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+    
+}

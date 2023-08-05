@@ -1,0 +1,73 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 3, 54, 0.459);
+    height: 80px;
+    padding: 0 5%;
+    width: 90%;
+    z-index: 11;
+    transition: background-color 400ms ease-in, left 200ms ease-in;
+}
+
+.menu-btn, 
+.menu-btn-close-mobile {
+    display: flex;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 8px;
+    color: white;
+    border: 2px solid rgb(0, 176, 240);
+    background-color: rgb(0, 176, 240);
+    transition: color 200ms ease-in, border-color 200ms linear, background-color 200ms linear, opacity 200ms ease-in;
+}
+
+.menu-btn-close-mobile {
+    display: none;
+}
+
+.menu-btn-open {
+    color: white;
+    border-color: white;
+    background-color: rgba(0, 176, 240, 0);
+}
+
+.menu-btn-open:hover {
+    color: rgb(0, 176, 240);
+    border-color: rgb(0, 176, 240);
+}
+
+.menu-btn-close:hover {
+    opacity: 0.7;
+}
+.menu-btn:active {
+    opacity: 0.3;
+}
+
+.logo-group {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    margin-left: 15px;
+    padding: 0 10px;
+    border-left: 2px solid gray;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-btn-close-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo-group {
+        position: absolute;
+        top: 130%;
+        margin-left: 0;
+    }
+}

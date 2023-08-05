@@ -1,0 +1,100 @@
+.contact-form-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    /* background-color: rgba(9, 9, 27, 0.808); */
+    background-color: rgba(160, 160, 160, 0.158);
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.contact-form {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.411);
+}
+
+.contact-form-container > .contact-form > .input-holder,
+.contact-form-container > .contact-form > .textarea-holder {
+    display: flex;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: rgba(235, 233, 233, 0.507);
+}
+
+
+.contact-form-container > .contact-form > .textarea-holder {
+    min-height: 90px;
+}
+/* .contact-form > input,
+.contact-form > input:active,
+.contact-form > input:hover,
+.contact-form > input:focus,
+.contact-form > textarea,
+.contact-form > textarea:active,
+.contact-form > textarea:hover,
+.contact-form > textarea:focus {
+    border: none;
+    outline: none;
+}
+
+
+.contact-form > input,
+.contact-form > textarea {
+    margin-bottom: 20px;
+    padding: 15px 5px;
+    background-color: rgba(235, 233, 233, 0.507);
+    transition: background-color 400ms ease-in-out;
+}
+
+.contact-form > textarea {
+    min-height: 90px;
+}
+
+.contact-form > input:focus,
+.contact-form > textarea:focus {
+    background-color: white;
+    outline: 2px solid rgb(27, 168, 250);
+}
+
+.contact-form > input:hover,
+.contact-form > textarea:hover {
+    background-color: rgba(235, 233, 233, 0.315);
+} */
+
+.contact-form > h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.contact-form > .close-form-toggle {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: gray;
+    transition: background-color 400ms ease-in-out;
+}
+
+.contact-form > .close-form-toggle:hover {
+    background-color: rgba(128, 128, 128, 0.151);
+}
+
+.contact-form > .close-form-toggle:active {
+    opacity: 0.50;
+}

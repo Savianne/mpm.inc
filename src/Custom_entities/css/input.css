@@ -1,0 +1,76 @@
+.input,
+.input-disabled {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: background-color 400ms ease-in-out, outline 400ms ease-in-out;
+}
+
+.input:hover {
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+.input > input, .input > input:active, .input > input:focus,
+.input > textarea, .input > textarea:active, .input > textarea:focus {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 0;
+    border: 0;
+}
+
+.input > input[state='init']:focus,
+.input > textarea[state='init']:focus {
+    outline: 1.5px solid rgba(0, 94, 170, 0.479);
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+}
+
+.input > input[state='onerror'],
+.input > textarea[state='onerror'] {
+    outline: 1.5px solid rgb(243, 22, 6);
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+}
+
+.input > input[state='success'],
+.input > textarea[state='success'] {
+    outline: 1.5px solid rgb(7, 243, 58);
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+}
+
+.input > .input-limit-count {
+    position: absolute;
+    top: 108%;
+    left: 0;
+    font-size: 12px;
+    color: gray
+}
+
+.input > input[state='disabled'],
+.input > textarea[state='disabled'] {
+    background-color: white;
+    color: rgba(0, 37, 70, 0.993);
+    opacity: 0.50;
+}
+
+.icn-error, 
+.icn-success {
+    position: absolute;
+    right: 5px;
+}
+
+.icn-error {
+    color:rgb(243, 22, 6);
+}
+
+.icn-success {
+    color: rgb(7, 243, 58);
+}
